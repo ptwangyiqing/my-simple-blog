@@ -1,0 +1,470 @@
+/*剁手宝的初始化*/
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:none; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+
+
+
+
+/*头部*/
+header {
+    height: 80px;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #334960;
+    position: fixed;
+    z-index: 10;
+}
+
+header div > a > img {
+    height: 80px;
+    width: 80px;
+}
+
+header ul > li {
+    float: left;
+    width: 60px;
+    padding-bottom: 30px;
+    pdding-left: 10px;
+    font: 16px/28px "microsoft yahei";
+    text-align: center;
+    position: relative;
+}
+header ul > li > a {
+    color: #ECEDEF;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    z-index: 12;
+}
+header ul > li > a:hover {
+    color: #ffffff;
+}
+
+header ul > li > a:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+header ul > li strong {
+    height: 80px;
+    background-color: #3f9fc9;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    top: -80px;
+    transition: top 0.5s;
+
+}
+header ul > li:first-child strong {
+    top: 0;
+}
+
+
+/*
+    个人介绍开始
+*/
+#introduce {
+    background-color: #334960;
+    color: #ffffff;
+    font-family: "microsoft yahei";
+    text-align: center;
+    height: 1080px;
+}
+#introduce > .jieshao > h1 {
+    padding-top: 200px;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+#introduce > .jieshao > #details {
+    margin: 15% 0 20%;
+    position: relative;
+}
+#introduce > .jieshao > #details li {
+    font-size: 40px;
+    text-align: left;
+    text-indent:2em;
+}
+
+#introduce .socials {
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+    margin-top: 25%;
+}
+#introduce .socials a {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: 69px;
+    height: 69px;
+    background: url("../img/socials.png") 0 0 no-repeat;
+}
+#introduce .socials a+a {
+    margin-left: 18px;
+    background-position: -87px 0;
+}
+#introduce .socials a+a+a {
+    background-position: -175px 0;
+    margin-left: 19px;
+}
+#introduce .socials a+a+a+a {
+    background-position: right 0;
+}
+#introduce .socials a {
+    text-decoration: none;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+#introduce .socials a:hover {
+    opacity: 0.5;
+}
+
+
+/*
+    洁面开始
+*/
+#cleanser {
+    background-color: #F17C72;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+#cleanser > .container {
+    padding-bottom: 200px;
+}
+#cleanser .jiantou {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 40px solid #334960;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+}
+#cleanser h2 {
+    font-size: 60px;
+    padding-top: 200px;
+    margin-bottom: 30px;
+}
+#cleanser > .container > p {
+    font-size: 20px;
+    margin-bottom: 150px;
+}
+
+
+#cleanser .row div div {
+    background-color: #e6655e;
+    border: 3px solid #f4948b;
+    padding: 23px 0 24px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+}
+#cleanser .row div div img {
+    border: 3px solid #f4948b;
+    border-radius: 500px;
+    margin-bottom: 19px;
+}
+#cleanser .row div div h3 {
+    font-size: 24px;
+}
+#cleanser .row div div > p {
+    font-size: 16px;
+    padding: 15px 20px 0;
+    text-align: left;
+    text-indent:2em;
+}
+#cleanser .row div div > h3 a {
+    color: #fd2614;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+#cleanser .row div div > h3 a:hover {
+    color: #ffffff;
+}
+
+
+/*
+    爽肤水开始
+*/
+#toner {
+    background-color: #32AC97;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+}
+#toner .jiantou {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 40px solid #F17C72;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+}
+#toner > .container {
+    padding-bottom: 200px;
+}
+#toner h2 {
+    font-size: 60px;
+    padding-top: 200px;
+    margin-bottom: 30px;
+}
+#toner > .container > p {
+    font-size: 20px;
+    margin-bottom: 150px;
+}
+
+
+#toner .row div div {
+    background-color: #46dcc7;
+    border: 3px solid #99d6cb;
+    padding: 23px 0 24px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+}
+#toner .row div div img {
+    border: 3px solid #c8f5ee;
+    border-radius: 500px;
+    margin-bottom: 19px;
+}
+#toner .row div div h3 {
+    font-size: 24px;
+}
+#toner .row div div > p {
+    font-size: 16px;
+    padding: 15px 20px 0;
+    text-align: left;
+    text-indent:2em;
+}
+#toner .row div div > p a {
+    color: #008B8B;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+#toner .row div div > p a:hover {
+    color: #ffffff;
+}
+
+
+
+
+/*
+    乳液开始
+*/
+
+
+#moisturizer {
+    background-color: #7F4C76;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+}
+#moisturizer .jiantou {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 40px solid #32AC97;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+}
+#moisturizer > .container {
+    padding-bottom: 200px;
+}
+#moisturizer h2 {
+    font-size: 60px;
+    padding-top: 200px;
+    margin-bottom: 30px;
+}
+#moisturizer > .container > p {
+    font-size: 20px;
+    margin-bottom: 150px;
+}
+
+
+#moisturizer .row div div {
+    background-color: #7a2b6c;
+    border: 3px solid #84607e;
+    padding: 23px 0 24px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+}
+#moisturizer .row div div img {
+    border: 3px solid #84607e;
+    border-radius: 500px;
+    margin-bottom: 19px;
+}
+#moisturizer .row div div h3 {
+    font-size: 24px;
+}
+#moisturizer .row div div > p {
+    font-size: 16px;
+    padding: 15px 20px 0;
+    text-align: left;
+    text-indent: 2em;
+}
+
+#moisturizer .row div div > p a {
+    color: #FF00FF;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+#moisturizer .row div div > p a:hover {
+    color: #ffffff;
+}
+
+
+/*
+    其他开始
+*/
+
+#other {
+    background-color: #3F9FC9;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+}
+#other .jiantou {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 40px solid #7F4C76;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+}
+#other h2 {
+    font-size: 60px;
+    padding-top: 200px;
+    margin-bottom: 30px;
+}
+#other .details {
+
+}
+#other > .container .img-section {
+    border: 3px solid #195872;
+    border-radius:25px;
+    padding: 0;
+    overflow: hidden;
+}
+#other > .container .img-section img {
+    width: 100%;
+}
+#other > .container .text-section {
+    padding-top: 5%;
+}
+#other > .container .text-section h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#other > .container .text-section p {
+    font-size: 20px;
+    text-align: left;
+    text-indent: 2em;
+}
+#other > .container .wenzhang {
+    font-size: 30px;
+    margin: 10%;
+}
+#other > .container .wenzhang a {
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+}
+#other > .container .wenzhang a:hover{
+    -webkit-animation: dese .75s linear infinite;
+    -moz-animation: dese .75s linear infinite;
+    -ms-animation: dese .75s linear infinite;
+    -o-animation: dese .75s linear infinite;
+    animation: dese .75s linear infinite;
+}
+@keyframes dese{
+    0% { transform: rotate(-12deg); } /* 添加旋转角度，以下类似 */
+    20% { transform: rotate(8deg); }
+    30% { transform: rotate(6deg); }
+    40% { transform: rotate(3deg); }
+    55% { transform: rotate(0deg); }
+    70% { transform: rotate(-4deg); }
+    80% { transform: rotate(7deg); }
+    90% { transform: rotate(-8deg); }
+    90% { transform: rotate(12deg); }
+}
+footer {
+    background-color: #BEBEBE;
+}
+footer div {
+    background-color: #BEBEBE;
+    height: 24px;
+    line-height: 24px;
+    color: #323232;
+}
+
+button {
+    color: #ffffff;
+    background-color: #334960;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+#sidebar {
+    position: fixed;
+    top: -35%;
+    right: 0;
+    width: 30%;
+    height: 35%;
+    background-color: #333;
+    color: #ffffff;
+    z-index: 10;
+    transition: top 0.5s;
+}
+#sidebar ul a {
+    padding: 10px;
+    padding-left: 40px;
+    display: inline-block;
+    color: #ffffff;
+    width: 100%;
+}
+#sidebar ul a:hover {
+    background-color: #444444;
+}
+
+
+
+
+

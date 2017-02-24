@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../dong.ico"/>
+    <title>东东护肤</title>
+    <meta name="Keywords" content="东东护肤，男士护肤，护肤，东东"/>
+    <meta name="Description" content="东东护肤是东东小朋友的个人护肤小站，原创或转载东东认同的护肤理念，热衷于成分分析，科学护肤。"/>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/jQuery-Validation-Engine-2.6.2/css/validationEngine.jquery.css">
+    <link rel="stylesheet" href="../css/articles.css">
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <?php include("add.php") ?>
+</head>
+<body>
+<header>
+    <div class="top">
+        <div>
+            <p>东东护肤</p>
+        </div>
+        <ul>
+            <li><a href="../articles.html">首页</a></li>
+            <li><a href="../articles.html">分类</a></li>
+            <li><a href="01article.html">关于</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="wenzhang">
+    <h2>建站初衷和护肤历程</h2>
+    <p>机械狗准备转职前端，原本打算是做个在线的简历网站，但我是个不爱按常理出牌的人，感觉人云亦云too boring，思来想去觉得关于护肤的知识值得和大家分享，于是这个小网站诞生了。</p>
+    <p>四年前，和大家一样，我对护肤一窍不通。记得那是刚军训完，望着镜子中的自己，我痛心疾首：不能在这样下去了，不然注定孤独一生啊！于是走上了护肤的道路（可惜至今单身没谈过恋爱悲剧啊）。</p>
+    <p>任何事情从无到有的过程是最艰难的，不过我是个爱学习的好孩子嘻嘻。初期的我混迹于各大论坛：贴吧、豆瓣、果壳、维基、youtube，我扑在护肤领域，就像饥饿的人扑在书上。向大牛们提问，做好笔记（真的做笔记了），整理笔记，比较各种说法（大牛们偶尔也会意见不统一），统一观念再进行整理……终于踏出了第一步。</p>
+    <p>实战首先面对的就是脸上的青春痘。青春痘也就是痤疮，父辈的的人往往会说长大后自己会好的，然而我到了二十脸上依然不见好转，只能自己动手丰衣足食~</p>
+    <p>根据学习的护肤知识，第一步是良好的面部清洁，做功课选好适合自己的洁面，早晚清洗干净，坚持了一个月略有效果但不满意，开始第二步。第二步刷酸，一般来说有水杨酸、果酸、A酸，A酸太刺激不适合新手pass；果酸是水溶性，不好去黑头psss；水杨酸脂溶性，完美契合我的油性皮肤。接着翻阅各大论坛刷酸经历，将其要点注意点各种突发情况等等整理成列表，一切准备就绪后开刷。（PS：以后会有文章详细讲刷酸，如要刷酸请做好功课毁容了东东不负责，切记做好防晒！）历时好几个月吧，痘痘进一步改善不过离我的目标还有一段距离，休息一段时间后再次刷酸，可惜结束后还是达不到目标，基因问题没办法，决定祭出终极大招：异维A酸！泰尔丝，这是处方药，专门去医院开的。这一次比刷酸做了更多的功课，将药的副作用注意点用量不适反应等等做好功课并列表，还爬上某些不存在的网站上看看歪果仁怎么吃，万事俱备开吃~在忍受了一系列恶心的不良反应后成功祛痘，撒花鼓掌~</p>
+    <p>接下来是去痘印，又开始对各种精华做功课，查看各种成分去痘印的效果以及评价，选择性价比高的产品（因为穷，所以疯狂追求性价比），有了上面祛痘的经验，这一次就轻车熟路了，几个月后痘印也去掉了，差不多一年吧脸上就看不出痘印了。</p>
+    <p>接下来想去痘坑，然后结论是去痘坑护肤品没用，左转医疗美容~不过不死心的我还是找到个小偏方，某宝上有家上水和肌（一般我都叫它上水野鸡）的淘宝店，里面有个去痘坑的东西貌似有点效果，我试了一支居然真的有点卵用，果然野鸡有时候会有意想不到的效果。（可惜打广告不给我广告费，不开心）</p>
+    <p>好了，今天就到这里了，更多详细的内容敬请关注后续的文章，东东和你一起重走护肤路，下一篇东东将和大家探讨一下洁面，你用对洁面了吗？</p>
+</div>
+
+
+
+<hr size=1>
+<form id="form_id" action="add.php" method="post" name="myform" onsubmit="return CheckPost();">
+    用户：<input type="text" class="validate[required] addSuccessCssClassToField" data-errormessage-value-missing="东东不接受空名"  size="10" name="user"/><br>
+    标题：<input type="text" class="validate[required] validate[minSize[5]] addSuccessCssClassToField" name="title" /><br>
+    内容：<textarea name="content" class="validate[required] addSuccessCssClassToField" data-errormessage-value-missing="没内容，你当吃瓜群众就行，服务器数据内存要钱滴"></textarea><br>
+    <input type="submit" name="submit" value="发布留言" />
+</form>
+<div class="chakanliuyan">
+    <a href="list.php">查看留言</a>
+</div>
+
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../lib/jQuery-Validation-Engine-2.6.2/js/jquery.validationEngine-zh_CN.js"></script>
+<script src="../lib/jQuery-Validation-Engine-2.6.2/js/jquery.validationEngine.min.js"></script>
+<script>
+    $(function () {
+        $('#form_id').validationEngine();
+    })
+</script>
+</body>
+</html>
+
+
