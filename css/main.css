@@ -441,6 +441,7 @@ button {
     left: 0;
     background: rgba(0, 0, 0, 0.3);
     display: none;
+    z-index: 20;
 }
 #sidebar {
     position: fixed;
@@ -452,6 +453,7 @@ button {
     color: #ffffff;
     z-index: 10;
     transition: top 0.5s;
+    z-index: 21;
 }
 #sidebar ul a {
     padding: 10px;
