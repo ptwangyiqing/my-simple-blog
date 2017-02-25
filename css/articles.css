@@ -75,11 +75,11 @@ header .top > ul li a:hover {
     font-weight: 700;
     margin-bottom: 30px;
 }
-.wenzhang li {
+.wenzhang ul li {
     font-size: 22px;
     font-weight: 700;
 }
-.wenzhang li a {
+.wenzhang ul li a {
     color: #54BAF3;
     transition: 0.5s ease;
     -o-transition: 0.5s ease;
