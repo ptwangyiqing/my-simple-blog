@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../dong.ico"/>
+    <title>东东护肤</title>
+    <meta name="Keywords" content="东东护肤，男士护肤，护肤，东东"/>
+    <meta name="Description" content="东东护肤是东东小朋友的个人护肤小站，原创或转载东东认同的护肤理念，热衷于成分分析，科学护肤。"/>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/jQuery-Validation-Engine-2.6.2/css/validationEngine.jquery.css">
+    <link rel="stylesheet" href="../css/articles.css">
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <?php include("add.php") ?>
+</head>
+<body>
+<header>
+    <div class="top">
+        <div>
+            <p>东东护肤</p>
+        </div>
+        <ul>
+            <li><a href="../articles.html">首页</a></li>
+            <li><a href="../articles.html">分类</a></li>
+            <li><a href="01article.html">关于</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="wenzhang">
+    <h2>关于保湿你需要知道的东西</h2>
+<p>护肤最基本的三大步骤：清洁，保湿，防晒。上一篇咱们讲了洁面的相关知识，把第一个大步骤清洁的基本要点说了一遍，相信大家应该对洁面有了一定的认识，而本篇的主题是保湿。</p>
+<p>洁面之后一般是上爽肤水，精华，乳液，面霜，这几个步骤笼统地来说就是为了保湿。不过由于东东是大油皮，除了冬天，洗完脸后补上一层水就足够日常保湿需要了，所以东东对各类乳液面霜没太大研究23333333333333333~</p>
+<p>作为一个成分控，让我们来分析一下乳液面霜中常见的保湿成分。</p>
+<p>多元醇类：以甘油（丙三醇）为代表，特点是价格便宜，非常基础的保湿成分。高浓度甘油有一定刺激性，涂抹在皮肤表面会从皮肤内层吸收水分引起刺痛，所以水和甘油按照3:1配置才能骑保湿效果；丙二醇：与甘油很相似，有点甜味，无色无毒，关于其刺激性众说纷纭，部分人群会过敏； 1，3-丁二醇：除了保湿还有抑菌的功效，刺激性都小于上述两个。山梨醇：微甜，保湿能力和甘油接近，刺激性很小，可作为食品添加剂。</p>
+<p>天然保湿因子：透明质酸：目前公认的最佳保湿成分，甘油保湿力度500倍，人类皮肤中天然固有的保湿成分，当然效果这么好自然很贵喽；神经酰胺：近年来开发出的最新一代保湿剂，它和构成皮肤角质层的物质结构相近，能很快渗透进皮肤，和角质层中的水结合，形成一种网状结构，锁住水分。尿素：是皮肤天然新陈代谢的产物，对软化皮肤作用奇佳，很多润手霜中都含有尿素。</p>
+<p>矿物油类：凡士林、石蜡、矿物油等等，价格便宜保湿力度极好就是透气性差，质感油腻，用量适当还是不错的。</p>
+<p>植物油类：常见的有吸收渗透快的玫瑰果油、椰子油、葡萄籽油；吸收慢的有小麦胚芽油、荷荷巴油、琼崖海棠油等等。</p>
+<p>总结一下，皮肤干燥不是因为需要补水，而是皮肤表层水分被蒸发，所以保湿显得格外重要，对于干性，中性皮肤而言选择合适的保湿产品很必要。至于油皮，哪凉快哪呆着去，自己分泌的油脂是最好的保湿剂嘎嘎。</p>
+<p>为什么没有懒人专属的产品推荐呢？第一因为做广告又不给我钱；第二因为我是大油皮我选用的都是极为清爽的保湿产品，不可能适合所有人。而没用过的产品我又没太多经验，说错了可不好，所以你们自己动手丰衣足食吧~</p>
+</div>
+
+
+
+<hr size=1>
+<form id="form_id" action="add.php" method="post" name="myform" onsubmit="return CheckPost();">
+    用户：<input type="text" class="validate[required] addSuccessCssClassToField" data-errormessage-value-missing="东东不接受空名"  size="10" name="user"/><br>
+    标题：<input type="text" class="validate[required] validate[minSize[5]] addSuccessCssClassToField" name="title" /><br>
+    内容：<textarea name="content" class="validate[required] addSuccessCssClassToField" data-errormessage-value-missing="没内容，你当吃瓜群众就行，服务器数据内存要钱滴"></textarea><br>
+    <input type="submit" name="submit" value="发布留言" />
+</form>
+<div class="chakanliuyan">
+    <a href="list.php">查看留言</a>
+</div>
+
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../lib/jQuery-Validation-Engine-2.6.2/js/jquery.validationEngine-zh_CN.js"></script>
+<script src="../lib/jQuery-Validation-Engine-2.6.2/js/jquery.validationEngine.min.js"></script>
+<script>
+    $(function () {
+        $('#form_id').validationEngine();
+    })
+</script>
+</body>
+</html>
