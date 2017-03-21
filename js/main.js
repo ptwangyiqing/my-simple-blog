@@ -65,14 +65,19 @@ $(function () {
 
 
     /*a链接强调标志*/
-    $("#header li").hover(
-        function () {
-            $(this).children("strong").css("top", 0);
-        },
-        function () {
-            $(this).children("strong").css("top", -80);
-        }
-    )
+    // $("#header li").hover(
+    //    	 function () {
+    //    	    	$(this).children("strong").css("top", 0);
+    //    	},
+    //    	function () {
+    //    	    $(this).children("strong").css("top", -80);
+    //    	}
+    // )
+    
+   
+
+
+
 
 
 })
